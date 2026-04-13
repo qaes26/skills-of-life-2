@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>شرح الفصل الثاني: التفكير الابتكاري | إعداد قيس جازي</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background-color: #f4f7fc;
+            overflow-x: hidden;
+        }
+        
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 10px; }
+        ::-webkit-scrollbar-track { background: #f1f1f1; }
+        ::-webkit-scrollbar-thumb { background: #6366f1; border-radius: 5px; }
+        ::-webkit-scrollbar-thumb:hover { background: #4f46e5; }
+
+        /* Animations */
+        .reveal {
+            animation: fadeInUp 1s ease-out forwards;
+        }
+        
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(40px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .hover-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+
+        /* Gradient Text */
+        .text-gradient {
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-image: linear-gradient(to left, #4f46e5, #ec4899);
+        }
+
+        /* Brain Split Styling */
+        .brain-left { background: linear-gradient(135deg, #e0f2fe 0%, #bae6fd 100%); }
+        .brain-right { background: linear-gradient(135deg, #fce7f3 0%, #fbcfe8 100%); }
+
+        /* Quiz Styling */
+        .quiz-option {
+            transition: all 0.3s;
+        }
+        .quiz-option:hover {
+            background-color: #eef2ff;
+        }
+        .correct-answer { background-color: #dcfce7 !important; border-color: #22c55e !important; color: #166534;}
+        .wrong-answer { background-color: #fee2e2 !important; border-color: #ef4444 !important; color: #991b1b;}
+    </style>
+</head>
+<body class="text-gray-800 antialiased">
+
+    <!-- Header Section -->
+    <header class="relative bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 text-white pt-24 pb-32 text-center overflow-hidden shadow-2xl rounded-b-[4rem]">
+        <div class="absolute inset-0 bg-black opacity-10"></div>
+        <div class="relative z-10 max-w-5xl mx-auto px-4">
+            <h1 class="text-5xl md:text-6xl font-extrabold mb-6 animate-pulse">التفكير الابتكاري</h1>
+            <p class="text-2xl md:text-3xl font-medium mb-8">شرح تفصيلي للفصل الثاني</p>
+            <div class="inline-block bg-white text-indigo-700 px-8 py-3 rounded-full font-bold text-lg shadow-lg hover:scale-105 transition-transform cursor-pointer">
+                <i class="fas fa-pen-fancy ml-2"></i> إعداد: قيس جازي
+            </div>
+        </div>
+        <!-- Decorative SVG -->
+        <svg class="absolute bottom-0 w-full h-16 text-gray-100" viewBox="0 0 1440 100" fill="currentColor" preserveAspectRatio="none">
+            <path d="M0,50 L48,55.3 C96,61,192,72,288,72 C384,72,480,61,576,50 C672,39,768,28,864,28 C960,28,1056,39,1152,50 C1248,61,1344,72,1392,77.3 L1440,83 L1440,100 L1392,100 C1344,100,1248,100,1152,100 C1056,100,960,100,864,100 C768,100,672,100,576,100 C480,100,384,100,288,100 C192,100,96,100,48,100 L0,100 Z"></path>
+        </svg>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-24">
+
+        <!-- 1. Definitions -->
+        <section class="reveal">
+            <h2 class="text-4xl font-bold text-center mb-12 text-gradient">1. تعريف التفكير الابتكاري</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-lg hover-card border-t-4 border-blue-500">
+                    <div class="text-blue-500 text-4xl mb-4"><i class="fas fa-box-open"></i></div>
+                    <h3 class="text-xl font-bold mb-3">الابتكار كناتج</h3>
+                    <p class="text-gray-600 leading-relaxed">تفكير في نسق مفتوح ينتج إجابات فريدة، وظهور إنتاج جديد نابع من التفاعل بين الفرد وخبراته، جديد في صياغته وإن كانت عناصره موجودة.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-lg hover-card border-t-4 border-purple-500">
+                    <div class="text-purple-500 text-4xl mb-4"><i class="fas fa-heartbeat"></i></div>
+                    <h3 class="text-xl font-bold mb-3">الابتكار كأسلوب حياة</h3>
+                    <p class="text-gray-600 leading-relaxed">عملية يستخدم فيها الإنسان الرموز الداخلية والخارجية لإنتاج شيء جديد ونافع لبيئته ومجتمعه.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-lg hover-card border-t-4 border-pink-500">
+                    <div class="text-pink-500 text-4xl mb-4"><i class="fas fa-cogs"></i></div>
+                    <h3 class="text-xl font-bold mb-3">الابتكار كعملية</h3>
+                    <p class="text-gray-600 leading-relaxed">اشتقاق حلول مبتكرة من المخزون المعرفي، الحساسية للمشكلات، البحث عن الحلول، اختبارها، وتوصيل النتائج للآخرين.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2 & 3. Criteria and Elements -->
+        <section class="reveal bg-white rounded-3xl shadow-xl p-10 overflow-hidden relative">
+            <div class="absolute top-0 right-0 -mr-16 -mt-16 text-indigo-100 opacity-50"><i class="fas fa-gem text-9xl"></i></div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 relative z-10">
+                <div>
+                    <h2 class="text-3xl font-bold mb-8 text-indigo-700">معايير المنتج الابتكاري (جاكسون وميسيك)</h2>
+                    <ul class="space-y-4">
+                        <li class="flex items-center p-4 bg-indigo-50 rounded-lg border-r-4 border-indigo-500">
+                            <i class="fas fa-star text-indigo-500 ml-4 text-xl"></i>
+                            <div><strong class="text-lg">الجدة:</strong> أن يكون حديثاً وغير مسبوق.</div>
+                        </li>
+                        <li class="flex items-center p-4 bg-indigo-50 rounded-lg border-r-4 border-indigo-500">
+                            <i class="fas fa-check-double text-indigo-500 ml-4 text-xl"></i>
+                            <div><strong class="text-lg">ملاءمة الحل:</strong> توافق الحل مع المشكلة.</div>
+                        </li>
+                        <li class="flex items-center p-4 bg-indigo-50 rounded-lg border-r-4 border-indigo-500">
+                            <i class="fas fa-exchange-alt text-indigo-500 ml-4 text-xl"></i>
+                            <div><strong class="text-lg">القابلية للتحويل:</strong> إعطاء أشكال جديدة للمنتج.</div>
+                        </li>
+                        <li class="flex items-center p-4 bg-indigo-50 rounded-lg border-r-4 border-indigo-500">
+                            <i class="fas fa-compress-arrows-alt text-indigo-500 ml-4 text-xl"></i>
+                            <div><strong class="text-lg">إمكانية التخليص:</strong> دمج وتنظيم الحل.</div>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h2 class="text-3xl font-bold mb-8 text-pink-600">عناصر المنتج الابتكاري</h2>
+                    <div class="space-y-6">
+                        <div class="bg-pink-50 p-5 rounded-xl flex items-start gap-4 hover:shadow-md transition">
+                            <div class="bg-pink-200 p-3 rounded-full text-pink-600"><i class="fas fa-brain"></i></div>
+                            <p class="font-medium text-gray-700">وضع استراتيجيات ومهارات إدراكية عليا لمعالجة المعلومات الجديدة.</p>
+                        </div>
+                        <div class="bg-pink-50 p-5 rounded-xl flex items-start gap-4 hover:shadow-md transition">
+                            <div class="bg-pink-200 p-3 rounded-full text-pink-600"><i class="fas fa-database"></i></div>
+                            <p class="font-medium text-gray-700">سعة قاعدة المعلومات التي يمتلكها الفرد وتفوق مهاراته.</p>
+                        </div>
+                        <div class="bg-pink-50 p-5 rounded-xl flex items-start gap-4 hover:shadow-md transition">
+                            <div class="bg-pink-200 p-3 rounded-full text-pink-600"><i class="fas fa-fire"></i></div>
+                            <p class="font-medium text-gray-700">الميول والمحفزات التي توجه الفرد للبحث عن بدائل وحلول فريدة.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Wallas Stages -->
+        <section class="reveal">
+            <h2 class="text-4xl font-bold text-center mb-12 text-gradient">مراحل العملية الابتكارية (نموذج والاس)</h2>
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <!-- Step 1 -->
+                <div class="flex-1 bg-white p-6 rounded-2xl shadow-lg text-center hover-card border-b-4 border-blue-500 w-full">
+                    <div class="w-16 h-16 mx-auto bg-blue-100 text-blue-600 rounded-full flex items-center justify-center text-2xl font-bold mb-4 shadow-inner">1</div>
+                    <h3 class="text-xl font-bold mb-2">التحضير والإعداد</h3>
+                    <p class="text-sm text-gray-600">استقصاء المشكلة وجمع الحقائق المرتبطة بها.</p>
+                </div>
+                <div class="hidden md:block text-gray-300 text-3xl"><i class="fas fa-chevron-left"></i></div>
+                <!-- Step 2 -->
+                <div class="flex-1 bg-white p-6 rounded-2xl shadow-lg text-center hover-card border-b-4 border-purple-500 w-full">
+                    <div class="w-16 h-16 mx-auto bg-purple-100 text-purple-600 rounded-full flex items-center justify-center text-2xl font-bold mb-4 shadow-inner">2</div>
+                    <h3 class="text-xl font-bold mb-2">التحضين</h3>
+                    <p class="text-sm text-gray-600">تفكير غير شعوري واختمار الأفكار دون تركيز مباشر.</p>
+                </div>
+                <div class="hidden md:block text-gray-300 text-3xl"><i class="fas fa-chevron-left"></i></div>
+                <!-- Step 3 -->
+                <div class="flex-1 bg-white p-6 rounded-2xl shadow-lg text-center hover-card border-b-4 border-yellow-500 w-full">
+                    <div class="w-16 h-16 mx-auto bg-yellow-100 text-yellow-600 rounded-full flex items-center justify-center text-2xl font-bold mb-4 shadow-inner">3</div>
+                    <h3 class="text-xl font-bold mb-2">الإشراق</h3>
+                    <p class="text-sm text-gray-600">الظهور الفجائي والتلقائي للحلول (ومضة الإبداع).</p>
+                </div>
+                <div class="hidden md:block text-gray-300 text-3xl"><i class="fas fa-chevron-left"></i></div>
+                <!-- Step 4 -->
+                <div class="flex-1 bg-white p-6 rounded-2xl shadow-lg text-center hover-card border-b-4 border-green-500 w-full">
+                    <div class="w-16 h-16 mx-auto bg-green-100 text-green-600 rounded-full flex items-center justify-center text-2xl font-bold mb-4 shadow-inner">4</div>
+                    <h3 class="text-xl font-bold mb-2">التحقق</h3>
+                    <p class="text-sm text-gray-600">التقييم والجهد الشعوري للتأكد من صلاحية الحل للتنفيذ.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Components of Creativity (Fluency, Flexibility, Originality) -->
+        <section class="reveal">
+            <div class="bg-indigo-900 rounded-3xl p-10 text-white shadow-2xl">
+                <h2 class="text-3xl font-bold text-center mb-10">مكونات الابتكار الثلاثة</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-indigo-800 p-8 rounded-xl border border-indigo-600 hover:bg-indigo-700 transition">
+                        <i class="fas fa-water text-5xl text-blue-400 mb-4 block text-center"></i>
+                        <h3 class="text-2xl font-bold mb-3 text-center text-blue-300">الطلاقة (Fluency)</h3>
+                        <p class="text-indigo-200 text-center">سرعة إنتاج أكبر عدد من الاستجابات الصحيحة. (التركيز على <strong>الكم</strong>).</p>
+                    </div>
+                    <div class="bg-indigo-800 p-8 rounded-xl border border-indigo-600 hover:bg-indigo-700 transition">
+                        <i class="fas fa-random text-5xl text-purple-400 mb-4 block text-center"></i>
+                        <h3 class="text-2xl font-bold mb-3 text-center text-purple-300">المرونة (Flexibility)</h3>
+                        <p class="text-indigo-200 text-center">تغيير الوجهة الذهنية والتحرر من النمطية. (التركيز على <strong>التنوع</strong>).</p>
+                    </div>
+                    <div class="bg-indigo-800 p-8 rounded-xl border border-indigo-600 hover:bg-indigo-700 transition">
+                        <i class="fas fa-crown text-5xl text-yellow-400 mb-4 block text-center"></i>
+                        <h3 class="text-2xl font-bold mb-3 text-center text-yellow-300">الأصالة (Originality)</h3>
+                        <p class="text-indigo-200 text-center">إنتاج أفكار نادرة وغير مألوفة. (التركيز على <strong>الندرة والحداثة</strong>).</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- General Info Grids (Nature, Importance, Methods) -->
+        <section class="reveal grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Importance -->
+            <div class="bg-white p-8 rounded-2xl shadow-lg border-r-8 border-teal-500">
+                <h3 class="text-2xl font-bold mb-6 text-teal-700"><i class="fas fa-star mr-2 ml-2"></i> أهمية التفكير الابتكاري</h3>
+                <ul class="list-disc list-inside space-y-3 text-gray-700">
+                    <li>تلبية حاجة المجتمع لقادة مجددين.</li>
+                    <li>تحقيق ذات الفرد وتنمية مواهبه.</li>
+                    <li>رفع التحصيل لجميع التلاميذ (حتى بطيئي التعلم).</li>
+                    <li>توفير الصحة النفسية للمبدعين.</li>
+                    <li>تطوير المجتمعات (قمة السلوكيات البشرية).</li>
+                </ul>
+            </div>
+            
+            <!-- Nature of Creativity -->
+            <div class="bg-white p-8 rounded-2xl shadow-lg border-r-8 border-orange-500">
+                <h3 class="text-2xl font-bold mb-6 text-orange-700"><i class="fas fa-leaf mr-2 ml-2"></i> طبيعة الابتكار الأربعة</h3>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="bg-orange-50 p-3 rounded text-center font-bold text-orange-800">الحل المباشر</div>
+                    <div class="bg-orange-50 p-3 rounded text-center font-bold text-orange-800">الحل التدريجي</div>
+                    <div class="bg-orange-50 p-3 rounded text-center font-bold text-orange-800">الحل المنتظم الهادئ</div>
+                    <div class="bg-orange-50 p-3 rounded text-center font-bold text-orange-800">الحل الفجائي</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Models of Creativity -->
+        <section class="reveal bg-gray-50 p-10 rounded-3xl shadow-inner border border-gray-200">
+            <h2 class="text-3xl font-bold text-center mb-10">نماذج مراحل الابتكار</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-white p-6 rounded-xl shadow-md border-r-4 border-indigo-400">
+                    <h3 class="text-xl font-bold text-indigo-700 mb-2">نموذج روسمان</h3>
+                    <p class="text-gray-600">يتكون من <strong>7 مراحل</strong>. يتميز بتركيزه على فردية كل متعلم في توليد البدائل والحلول بمفرده.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md border-r-4 border-pink-400">
+                    <h3 class="text-xl font-bold text-pink-700 mb-2">نموذج دي بونو</h3>
+                    <p class="text-gray-600">يتكون من <strong>5 مراحل (TO, LO, PO, SO, GO)</strong>. يتميز بوضع إطار يبدأ بالهدف مروراً بالعمليات وصولاً لاختيار المخرجات.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md border-r-4 border-blue-400">
+                    <h3 class="text-xl font-bold text-blue-700 mb-2">نموذج والاس</h3>
+                    <p class="text-gray-600">يتكون من <strong>4 مراحل</strong>. يتميز بالانتقال من الجهد الشعوري إلى اللاشعوري ثم الاستبصار الفجائي.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md border-r-4 border-green-400">
+                    <h3 class="text-xl font-bold text-green-700 mb-2">نموذج أبو جمعة</h3>
+                    <p class="text-gray-600">يتكون من <strong>6 مراحل</strong>. يضع الابتكار موضع التنفيذ العملي ويدمج خطوات النماذج السابقة.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Baxia and Brainstorming -->
+        <section class="reveal grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <!-- Baxia -->
+            <div class="bg-white rounded-2xl shadow-xl overflow-hidden">
+                <div class="bg-blue-600 text-white p-4 font-bold text-xl"><i class="fas fa-list-ol ml-2"></i> طريقة باكسيا (بالترتيب)</div>
+                <div class="p-6">
+                    <ol class="list-decimal list-inside space-y-2 text-gray-700 font-medium text-sm md:text-base">
+                        <li class="pb-1 border-b border-gray-100">تخير المشكلة وتحديدها.</li>
+                        <li class="pb-1 border-b border-gray-100">جمع المعلومات.</li>
+                        <li class="pb-1 border-b border-gray-100">تنظيم المعلومات.</li>
+                        <li class="pb-1 border-b border-gray-100">فحص المعلومات لاكتشاف العلاقات.</li>
+                        <li class="pb-1 border-b border-gray-100 text-blue-600 font-bold">الاسترخاء عند عدم الوصول لنتائج.</li>
+                        <li class="pb-1 border-b border-gray-100">محاولة إيجاد أفكار جديدة بالتركيز.</li>
+                        <li class="pb-1 border-b border-gray-100">إعادة النظر بموضوعية.</li>
+                        <li class="pb-1 border-b border-gray-100">وضع الأفكار موضع النقد.</li>
+                        <li>تكرار هذه المراحل لتصبح عادة.</li>
+                    </ol>
+                </div>
+            </div>
+
+            <!-- Brainstorming -->
+            <div class="bg-white rounded-2xl shadow-xl overflow-hidden flex flex-col">
+                <div class="bg-yellow-500 text-white p-4 font-bold text-xl"><i class="fas fa-bolt ml-2"></i> العصف الذهني</div>
+                <div class="p-6 flex-1 flex flex-col justify-center">
+                    <p class="text-gray-600 mb-4">أسلوب جماعي لتوليد الكثير من الأفكار مع <strong>تأجيل الحكم عليها</strong> فور ظهورها. مراحله:</p>
+                    <ul class="space-y-3">
+                        <li class="flex items-center text-gray-700"><i class="fas fa-check text-yellow-500 ml-3"></i> الإعداد للجلسة (القواعد والوقت).</li>
+                        <li class="flex items-center text-gray-700"><i class="fas fa-check text-yellow-500 ml-3"></i> تحديد وصياغة المشكلة.</li>
+                        <li class="flex items-center text-gray-700"><i class="fas fa-check text-yellow-500 ml-3"></i> توليد الأفكار بحرية مطلقة.</li>
+                        <li class="flex items-center text-gray-700"><i class="fas fa-check text-yellow-500 ml-3"></i> وضع معايير للانتقاء.</li>
+                        <li class="flex items-center text-gray-700"><i class="fas fa-check text-yellow-500 ml-3"></i> الحكم وتقييم الأفكار لاختيار الأنسب.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Brain Hemispheres -->
+        <section class="reveal">
+            <h2 class="text-4xl font-bold text-center mb-12 text-gradient">وظائف وتخصص النصفين الكرويين للدماغ</h2>
+            <div class="flex flex-col md:flex-row gap-8">
+                <!-- Right Brain -->
+                <div class="flex-1 rounded-3xl p-8 shadow-lg brain-right relative overflow-hidden hover-card">
+                    <i class="fas fa-palette absolute -top-4 -left-4 text-8xl text-pink-300 opacity-30 transform -rotate-12"></i>
+                    <h3 class="text-2xl font-bold text-pink-800 mb-6 text-center border-b-2 border-pink-300 pb-2">النصف الأيمن (الإبداعي)</h3>
+                    <ul class="space-y-4 text-pink-900 font-medium">
+                        <li><i class="fas fa-dot-circle text-pink-500 ml-2 text-sm"></i> معالجة معرفية متزامنة (كلية).</li>
+                        <li><i class="fas fa-dot-circle text-pink-500 ml-2 text-sm"></i> غير لفظي / حدسي.</li>
+                        <li><i class="fas fa-dot-circle text-pink-500 ml-2 text-sm"></i> تفكير تباعدي (Divergent).</li>
+                        <li><i class="fas fa-dot-circle text-pink-500 ml-2 text-sm"></i> تذكر وجوه الأشخاص.</li>
+                        <li><i class="fas fa-dot-circle text-pink-500 ml-2 text-sm"></i> تفكير ابتكاري مفتوح النظام.</li>
+                        <li><i class="fas fa-dot-circle text-pink-500 ml-2 text-sm"></i> يستجيب لنغمة الصوت.</li>
+                        <li><i class="fas fa-dot-circle text-pink-500 ml-2 text-sm"></i> يميل للمغامرة والمهارات البصرية والمكانية.</li>
+                    </ul>
+                </div>
+                
+                <!-- Left Brain -->
+                <div class="flex-1 rounded-3xl p-8 shadow-lg brain-left relative overflow-hidden hover-card">
+                    <i class="fas fa-calculator absolute -top-4 -right-4 text-8xl text-blue-300 opacity-30 transform rotate-12"></i>
+                    <h3 class="text-2xl font-bold text-blue-800 mb-6 text-center border-b-2 border-blue-300 pb-2">النصف الأيسر (المنطقي)</h3>
+                    <ul class="space-y-4 text-blue-900 font-medium">
+                        <li><i class="fas fa-dot-circle text-blue-500 ml-2 text-sm"></i> معالجة معرفية متتابعة (تحليلية خطية).</li>
+                        <li><i class="fas fa-dot-circle text-blue-500 ml-2 text-sm"></i> لفظي / منطقي.</li>
+                        <li><i class="fas fa-dot-circle text-blue-500 ml-2 text-sm"></i> تفكير تقاربي (Convergent).</li>
+                        <li><i class="fas fa-dot-circle text-blue-500 ml-2 text-sm"></i> تذكر أسماء الأشخاص.</li>
+                        <li><i class="fas fa-dot-circle text-blue-500 ml-2 text-sm"></i> تفكير ناقد مغلق النظام.</li>
+                        <li><i class="fas fa-dot-circle text-blue-500 ml-2 text-sm"></i> يستجيب لمعنى الكلمة.</li>
+                        <li><i class="fas fa-dot-circle text-blue-500 ml-2 text-sm"></i> غير مغامر، يسيطر على اللغة والكلام.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Obstacles -->
+        <section class="reveal">
+            <h2 class="text-3xl font-bold text-center mb-10 text-red-600"><i class="fas fa-ban ml-2"></i> معوقات الابتكار</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-red-50 p-6 rounded-xl border border-red-200 hover-card">
+                    <h3 class="text-xl font-bold text-red-700 mb-4 text-center"><i class="fas fa-home ml-2"></i> الأسرة</h3>
+                    <p class="text-sm text-gray-700">التسلط، الحماية الزائدة، الاهتمام المفرط بالدرجات فقط، التمسك الأعمى بالتقاليد، الخوف من العقاب، ضيق الوقت (للفتيات)، عدم تشجيع المواهب.</p>
+                </div>
+                <div class="bg-red-50 p-6 rounded-xl border border-red-200 hover-card">
+                    <h3 class="text-xl font-bold text-red-700 mb-4 text-center"><i class="fas fa-school ml-2"></i> المدرسة</h3>
+                    <p class="text-sm text-gray-700">التدريس للامتحانات فقط، العقاب على التساؤل، كبت الأفكار، ضغط الجداول، التلقين، ضعف كفاءة المناهج والمعلمين.</p>
+                </div>
+                <div class="bg-red-50 p-6 rounded-xl border border-red-200 hover-card">
+                    <h3 class="text-xl font-bold text-red-700 mb-4 text-center"><i class="fas fa-city ml-2"></i> المجتمع</h3>
+                    <p class="text-sm text-gray-700">الاتجاه التسلطي، التأخر الحضاري والتكنولوجي، المشكلات السياسية، عدم تقدير العلماء وغياب المؤسسات الداعمة.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quiz Section -->
+        <section id="quiz-section" class="reveal bg-white p-8 md:p-12 rounded-3xl shadow-2xl border-t-8 border-indigo-600 mt-20">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-extrabold text-indigo-700 mb-4">اختبار تقييم الذات</h2>
+                <p class="text-gray-500 text-lg">30 سؤال موضوعي (ضع دائرة) لاختبار فهمك للفصل الثاني</p>
+            </div>
+
+            <div id="quiz-container" class="space-y-8">
+                <!-- Questions will be dynamically generated by JS here -->
+            </div>
+
+            <div class="mt-12 text-center">
+                <button id="submit-btn" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-4 px-12 rounded-full text-xl shadow-lg transform transition hover:scale-105">
+                    تقديم الاختبار <i class="fas fa-paper-plane mr-2"></i>
+                </button>
+            </div>
+
+            <!-- Results Display -->
+            <div id="result-box" class="hidden mt-10 p-8 rounded-2xl text-center shadow-inner">
+                <h3 class="text-3xl font-bold mb-2" id="score-text"></h3>
+                <p class="text-lg text-gray-600" id="score-msg"></p>
+                <button onclick="location.reload()" class="mt-6 bg-gray-200 hover:bg-gray-300 text-gray-800 font-bold py-2 px-6 rounded-full transition">إعادة الاختبار</button>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-gray-800 text-gray-400 py-8 text-center">
+        <p>تم إعداد هذا المحتوى وتصميمه بناءً على معطيات الفصل الثاني - التفكير الابتكاري.</p>
+        <p class="text-white font-bold mt-2">إعداد: قيس جازي &copy; 2026</p>
+    </footer>
+
+    <!-- JavaScript For Interactivity and Quiz -->
+    <script>
+        // Quiz Data
+        const quizData = [
+            { q: "تعريف الابتكار الذي يركز على اشتقاق حلول من المخزون المعرفي لمواجهة موقف مشكل هو:", options: ["الابتكار كناتج", "الابتكار كعملية", "الابتكار كأسلوب حياة", "الابتكار البيئي"], ans: 1 },
+            { q: "عندما يركز الابتكار على أنه ظهور إنتاج جديد نابع من التفاعل بين الفرد وخبراته، فإنه يُعرّف بأنه:", options: ["عملية", "أسلوب حياة", "ناتج", "مهارة"], ans: 2 },
+            { q: "من معايير المنتج الابتكاري (حسب جاكسون وميسيك) والذي يعني أن المنتج حديث وغير مسبوق:", options: ["الجدة", "ملاءمة الحل", "القابلية للتحويل", "إمكانية التخليص"], ans: 0 },
+            { q: "إمكانية أن يعطي المنتج أشكالاً جديدة تعبر عن معيار:", options: ["الجدة", "إمكانية التخليص", "ملاءمة الحل", "القابلية للتحويل"], ans: 3 },
+            { q: "العنصر الذي يشير إلى المهارات الإدراكية العليا لمعالجة المعلومات هو من:", options: ["معوقات الابتكار", "عناصر المنتج الابتكاري", "طبيعة الابتكار", "مراحل والاس"], ans: 1 },
+            { q: "في نموذج والاس، المرحلة التي يتم فيها التفكير اللاشعوري واختمار الأفكار تسمى:", options: ["التحضير", "الإشراق", "التحضين", "التحقق"], ans: 2 },
+            { q: "المرحلة التي تظهر فيها ومضة الإبداع والحل الفجائي (في نموذج والاس) هي:", options: ["التحضين", "الإشراق", "التحقق", "الإعداد"], ans: 1 },
+            { q: "مرحلة الجهد الشعوري والتأكد من صلاحية الحل للتنفيذ (حسب والاس) هي:", options: ["التحقق", "التحضير", "الإشراق", "التحضين"], ans: 0 },
+            { q: "ترجع أهمية التفكير الابتكاري إلى أنه:", options: ["يحتاجه فقط العباقرة", "يقلل من التحصيل الدراسي", "قمة السلوكيات البشرية ويلبي حاجة المجتمع", "يزيد من المعوقات النفسية"], ans: 2 },
+            { q: "من أنواع (طبيعة) الابتكار الأربعة:", options: ["الحل العشوائي", "الحل الفجائي", "الحل المعقد", "الحل التقليدي"], ans: 1 },
+            { q: "القدرة على سرعة إنتاج أكبر عدد ممكن من الاستجابات لمشكلة معينة تسمى:", options: ["الأصالة", "المرونة", "الطلاقة", "الإفاضة"], ans: 2 },
+            { q: "القدرة على إنتاج أفكار نادرة وغير مألوفة تقاس بـ:", options: ["الطلاقة", "المرونة", "الأصالة", "السرعة"], ans: 2 },
+            { q: "مكون الابتكار الذي يركز على (تنوع) الفئات المختلفة للإجابات والتحرر من النمطية هو:", options: ["الطلاقة", "الأصالة", "المرونة", "الحساسية للمشكلات"], ans: 2 },
+            { q: "النموذج الذي يتكون من 7 مراحل وركز على فردية المتعلم هو:", options: ["والاس", "دي بونو", "روسمان", "أبو جمعة"], ans: 2 },
+            { q: "النموذج الذي يتضمن خطوات (TO, LO, PO, SO, GO) هو نموذج:", options: ["دي بونو", "روسمان", "والاس", "باكسيا"], ans: 0 },
+            { q: "يتكون نموذج والاس للابتكار من كم مرحلة؟", options: ["3 مراحل", "4 مراحل", "5 مراحل", "6 مراحل"], ans: 1 },
+            { q: "النموذج الذي يتكون من 6 مراحل ويضع الابتكار موضع التنفيذ العملي هو:", options: ["روسمان", "دي بونو", "أبو جمعة", "والاس"], ans: 2 },
+            { q: "الخطوة الأولى في طريقة باكسيا هي:", options: ["جمع المعلومات", "الاسترخاء", "تخير المشكلة وتحديدها", "وضع الأفكار موضع النقد"], ans: 2 },
+            { q: "في طريقة باكسيا، عندما لا يصل الفرد لنتائج بعد فحص المعلومات، يُنصح بـ:", options: ["الاسترخاء", "النقد المباشر", "تغيير المشكلة تماماً", "العقاب الذاتي"], ans: 0 },
+            { q: "من قواعد أسلوب العصف الذهني:", options: ["نقد الأفكار فور طرحها", "التركيز على الجودة فقط وليس الكم", "تأجيل الحكم على الأفكار", "عدم السماح بالأفكار الغريبة"], ans: 2 },
+            { q: "النصف الكروي من الدماغ المختص بالمعالجة التحليلية الخطية والمنطق هو:", options: ["الأيمن", "الأيسر", "كلاهما معاً", "الخلفي"], ans: 1 },
+            { q: "التفكير التباعدي (Divergent) والحدس من وظائف النصف:", options: ["الأيسر", "الأيمن", "الجبهي", "الجداري"], ans: 1 },
+            { q: "من يتذكر (وجوه) الأشخاص أسرع، يميل لاستخدام النصف:", options: ["الأيمن", "الأيسر", "الأوسط", "الأسفل"], ans: 0 },
+            { q: "التفكير الناقد (مغلق النظام) واللغة من تخصصات النصف:", options: ["الأيمن", "الأيسر", "كلاهما متساويان", "ليس له علاقة بالدماغ"], ans: 1 },
+            { q: "يميل الشخص للمغامرة ويستجيب لنغمة الصوت إذا كان يعتمد بشكل أكبر على:", options: ["النصف الأيمن", "النصف الأيسر", "النخاع الشوكي", "المخيخ"], ans: 0 },
+            { q: "من معوقات الابتكار (الخاصة بالأسرة):", options: ["التأخر التكنولوجي", "ضغط الجداول المدرسية", "الحماية الزائدة والتسلط", "عدم تقدير العلماء"], ans: 2 },
+            { q: "التربية الموجهة للنجاح بالامتحانات فقط، والعقاب على التساؤل هي من معوقات:", options: ["الأسرة", "المدرسة", "المجتمع", "الدولة"], ans: 1 },
+            { q: "الاتجاه التسلطي والتأخر الحضاري من معوقات الابتكار المتعلقة بـ:", options: ["المجتمع", "المدرسة", "الأسرة", "الفرد"], ans: 0 },
+            { q: "قياس الابتكار من حيث (الكم) مرتبط بمفهوم:", options: ["الطلاقة", "المرونة", "الأصالة", "الحساسية"], ans: 0 },
+            { q: "أسلوب جماعي يهدف لتوليد الأفكار بحرية مطلقة مع التركيز على الكثرة هو:", options: ["طريقة باكسيا", "العصف الذهني", "الحل الفجائي", "الاسترخاء المعرفي"], ans: 1 }
+        ];
+
+        const quizContainer = document.getElementById('quiz-container');
+
+        // Render Questions
+        quizData.forEach((item, index) => {
+            const qDiv = document.createElement('div');
+            qDiv.className = 'bg-gray-50 border border-gray-200 rounded-xl p-6 shadow-sm question-block';
+            
+            let optionsHTML = '';
+            item.options.forEach((opt, optIndex) => {
+                optionsHTML += `
+                    <label class="quiz-option block p-4 mt-3 border border-gray-300 rounded-lg cursor-pointer flex items-center space-x-3 space-x-reverse relative">
+                        <input type="radio" name="q${index}" value="${optIndex}" class="form-radio h-5 w-5 text-indigo-600 focus:ring-indigo-500">
+                        <span class="text-gray-700 font-medium">${opt}</span>
+                    </label>
+                `;
+            });
+
+            qDiv.innerHTML = `
+                <h3 class="text-xl font-bold text-gray-800 mb-4"><span class="text-indigo-600">${index + 1}.</span> ${item.q}</h3>
+                <div class="options-container">
+                    ${optionsHTML}
+                </div>
+                <div class="feedback hidden mt-4 font-bold text-sm"></div>
+            `;
+            quizContainer.appendChild(qDiv);
+        });
+
+        // Grading Logic
+        document.getElementById('submit-btn').addEventListener('click', () => {
+            let score = 0;
+            let answeredCount = 0;
+            const questionBlocks = document.querySelectorAll('.question-block');
+
+            questionBlocks.forEach((block, index) => {
+                const selectedOption = block.querySelector(`input[name="q${index}"]:checked`);
+                const optionsContainers = block.querySelectorAll('.quiz-option');
+                const feedbackDiv = block.querySelector('.feedback');
+                
+                // Reset styling
+                optionsContainers.forEach(opt => {
+                    opt.classList.remove('correct-answer', 'wrong-answer');
+                    opt.style.pointerEvents = 'none'; // Disable further clicking
+                });
+                feedbackDiv.classList.remove('hidden');
+
+                if (selectedOption) {
+                    answeredCount++;
+                    const selectedVal = parseInt(selectedOption.value);
+                    const correctVal = quizData[index].ans;
+
+                    // Highlight correct answer always
+                    optionsContainers[correctVal].classList.add('correct-answer');
+
+                    if (selectedVal === correctVal) {
+                        score++;
+                        feedbackDiv.innerHTML = '<i class="fas fa-check-circle text-green-600"></i> إجابة صحيحة';
+                        feedbackDiv.className = 'feedback mt-4 font-bold text-sm text-green-600';
+                    } else {
+                        // Highlight user's wrong answer
+                        optionsContainers[selectedVal].classList.add('wrong-answer');
+                        feedbackDiv.innerHTML = '<i class="fas fa-times-circle text-red-600"></i> إجابة خاطئة';
+                        feedbackDiv.className = 'feedback mt-4 font-bold text-sm text-red-600';
+                    }
+                } else {
+                    // Highlight correct if not answered
+                    optionsContainers[quizData[index].ans].classList.add('correct-answer');
+                    feedbackDiv.innerHTML = '<i class="fas fa-exclamation-circle text-yellow-600"></i> لم يتم الإجابة';
+                    feedbackDiv.className = 'feedback mt-4 font-bold text-sm text-yellow-600';
+                }
+            });
+
+            // Hide Submit Button and show Result Box
+            document.getElementById('submit-btn').style.display = 'none';
+            const resultBox = document.getElementById('result-box');
+            resultBox.classList.remove('hidden');
+
+            const scoreText = document.getElementById('score-text');
+            const scoreMsg = document.getElementById('score-msg');
+            
+            scoreText.innerText = `نتيجتك: ${score} من 30`;
+            
+            if (score === 30) {
+                resultBox.className = 'mt-10 p-8 rounded-2xl text-center shadow-inner bg-green-100 text-green-800 border-2 border-green-500';
+                scoreMsg.innerText = "ممتاز! أنت مبدع حقاً ولديك فهم كامل للفصل.";
+            } else if (score >= 20) {
+                resultBox.className = 'mt-10 p-8 rounded-2xl text-center shadow-inner bg-blue-100 text-blue-800 border-2 border-blue-500';
+                scoreMsg.innerText = "جيد جداً! لقد استوعبت المادة بشكل جيد.";
+            } else if (score >= 10) {
+                resultBox.className = 'mt-10 p-8 rounded-2xl text-center shadow-inner bg-yellow-100 text-yellow-800 border-2 border-yellow-500';
+                scoreMsg.innerText = "متوسط. راجع بعض المفاهيم لتثبيتها بشكل أفضل.";
+            } else {
+                resultBox.className = 'mt-10 p-8 rounded-2xl text-center shadow-inner bg-red-100 text-red-800 border-2 border-red-500';
+                scoreMsg.innerText = "تحتاج إلى مراجعة الفصل بتركيز أعلى، لا تيأس والمحاولة القادمة ستكون أفضل!";
+            }
+
+            // Scroll to results smoothly
+            resultBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        });
+    </script>
+</body>
+</html>
