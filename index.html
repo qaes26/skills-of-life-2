@@ -26,14 +26,8 @@
         }
         
         @keyframes fadeInUp {
-            0% {
-                opacity: 0;
-                transform: translateY(40px);
-            }
-            100% {
-                opacity: 1;
-                transform: translateY(0);
-            }
+            0% { opacity: 0; transform: translateY(40px); }
+            100% { opacity: 1; transform: translateY(0); }
         }
 
         .hover-card:hover {
@@ -54,14 +48,24 @@
         .brain-right { background: linear-gradient(135deg, #fce7f3 0%, #fbcfe8 100%); }
 
         /* Quiz Styling */
-        .quiz-option {
-            transition: all 0.3s;
-        }
-        .quiz-option:hover {
-            background-color: #eef2ff;
-        }
+        .quiz-option { transition: all 0.3s; }
+        .quiz-option:hover { background-color: #eef2ff; }
         .correct-answer { background-color: #dcfce7 !important; border-color: #22c55e !important; color: #166534;}
         .wrong-answer { background-color: #fee2e2 !important; border-color: #ef4444 !important; color: #991b1b;}
+
+        /* Blob Animation for New Section */
+        .animate-blob {
+            animation: blob 7s infinite;
+        }
+        .animation-delay-2000 {
+            animation-delay: 2s;
+        }
+        @keyframes blob {
+            0% { transform: translate(0px, 0px) scale(1); }
+            33% { transform: translate(30px, -50px) scale(1.1); }
+            66% { transform: translate(-20px, 20px) scale(0.9); }
+            100% { transform: translate(0px, 0px) scale(1); }
+        }
     </style>
 </head>
 <body class="text-gray-800 antialiased">
@@ -70,7 +74,7 @@
         <div class="absolute inset-0 bg-black opacity-10"></div>
         <div class="relative z-10 max-w-5xl mx-auto px-4">
             <h1 class="text-5xl md:text-6xl font-extrabold mb-6 animate-pulse">التفكير الابتكاري</h1>
-            <p class="text-2xl md:text-3xl font-medium mb-8">شرح تفصيلي للفصل الثاني</p>
+            <p class="text-2xl md:text-3xl font-medium mb-8">شرح تفصيلي للفصل الثاني - الترتيب التسلسلي</p>
             <div class="inline-block bg-white text-indigo-700 px-8 py-3 rounded-full font-bold text-lg shadow-lg hover:scale-105 transition-transform cursor-pointer">
                 <i class="fas fa-pen-fancy ml-2"></i> إعداد الطالب : قيس طلال الجازي
             </div>
@@ -82,12 +86,13 @@
 
     <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 space-y-24">
 
+        <!-- القسم الأول: تعريف التفكير الابتكاري (ص 41 - 44) -->
         <section class="reveal">
-            <h2 class="text-4xl font-bold text-center mb-12 text-gradient">1. تعريف التفكير الابتكاري</h2>
+            <h2 class="text-4xl font-bold text-center mb-12 text-gradient">1. تعريف التفكير الابتكاري <span class="text-lg bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full align-middle font-normal ml-2 text-shadow-none">ص 41-44</span></h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div class="bg-white p-8 rounded-2xl shadow-lg hover-card border-t-4 border-blue-500">
                     <div class="text-blue-500 text-4xl mb-4"><i class="fas fa-box-open"></i></div>
-                    <h3 class="text-xl font-bold mb-3">الابتكار كناتج</h3>
+                    <h3 class="text-xl font-bold mb-3">الابتكار كناتج <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded-full">ص 41-42</span></h3>
                     <p class="text-gray-600 leading-relaxed text-sm">
                         عرفه <strong class="text-blue-600">جيلفورد</strong>: التفكير في نسق مفتوح يتميز الإنتاج فيه بخاصية فريدة وهي تنوع الإجابات المنتجة.<br>
                         عرفه <strong class="text-blue-600">روجرز</strong>: ظهور لإنتاج جديد نابع من التفاعل بين الفرد وما يكتسبه من خبرات.<br>
@@ -96,14 +101,14 @@
                 </div>
                 <div class="bg-white p-8 rounded-2xl shadow-lg hover-card border-t-4 border-purple-500">
                     <div class="text-purple-500 text-4xl mb-4"><i class="fas fa-heartbeat"></i></div>
-                    <h3 class="text-xl font-bold mb-3">الابتكار كأسلوب حياة</h3>
+                    <h3 class="text-xl font-bold mb-3">الابتكار كأسلوب حياة <span class="text-xs bg-purple-100 text-purple-800 px-2 py-1 rounded-full">ص 43</span></h3>
                     <p class="text-gray-600 leading-relaxed text-sm">
                         كما عرفه <strong class="text-purple-600">عبد السلام عبد الغفار</strong>: عملية يحاول فيها الإنسان أن يحقق ذاته وذلك باستخدام الرموز الداخلية والخارجية التي تمثل الأفكار والناس لكي ينتج إنتاجاً جديداً بالنسبة له ولبيئته على أن يكون نافعاً للمجتمع.
                     </p>
                 </div>
                 <div class="bg-white p-8 rounded-2xl shadow-lg hover-card border-t-4 border-pink-500">
                     <div class="text-pink-500 text-4xl mb-4"><i class="fas fa-cogs"></i></div>
-                    <h3 class="text-xl font-bold mb-3">الابتكار كعملية</h3>
+                    <h3 class="text-xl font-bold mb-3">الابتكار كعملية <span class="text-xs bg-pink-100 text-pink-800 px-2 py-1 rounded-full">ص 43-44</span></h3>
                     <p class="text-gray-600 leading-relaxed text-sm">
                         عرفه <strong class="text-pink-600">تورانس</strong>: عملية أن تصبح حساساً للمشكلات ولنواحي القصور، وتبحث عن الحلول وتختبرها، وفي النهاية تعبر عن النتائج للآخرين.<br>
                         وعرفه <strong class="text-pink-600">جيلفورد</strong>: عملية اشتقاق حلول مبتكرة من المخزون المعرفي لمواجهة متطلبات الموقف المشكل.
@@ -112,11 +117,12 @@
             </div>
         </section>
 
+        <!-- القسم الثاني: معايير وعناصر المنتج الابتكاري تابع للتعريف (ص 42) -->
         <section class="reveal bg-white rounded-3xl shadow-xl p-10 overflow-hidden relative">
             <div class="absolute top-0 right-0 -mr-16 -mt-16 text-indigo-100 opacity-50"><i class="fas fa-gem text-9xl"></i></div>
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 relative z-10">
                 <div>
-                    <h2 class="text-3xl font-bold mb-8 text-indigo-700">معايير المنتج الابتكاري (جاكسون وميسيك)</h2>
+                    <h2 class="text-3xl font-bold mb-8 text-indigo-700">معايير المنتج الابتكاري <span class="text-sm bg-indigo-100 text-indigo-800 px-2 py-1 rounded-full font-normal">ص 42</span></h2>
                     <ul class="space-y-4">
                         <li class="flex items-center p-4 bg-indigo-50 rounded-lg border-r-4 border-indigo-500">
                             <i class="fas fa-star text-indigo-500 ml-4 text-xl"></i>
@@ -137,7 +143,7 @@
                     </ul>
                 </div>
                 <div>
-                    <h2 class="text-3xl font-bold mb-8 text-pink-600">عناصر المنتج الابتكاري</h2>
+                    <h2 class="text-3xl font-bold mb-8 text-pink-600">عناصر المنتج الابتكاري <span class="text-sm bg-pink-100 text-pink-800 px-2 py-1 rounded-full font-normal">ص 42</span></h2>
                     <div class="space-y-6">
                         <div class="bg-pink-50 p-5 rounded-xl flex items-start gap-4 hover:shadow-md transition">
                             <div class="bg-pink-200 p-3 rounded-full text-pink-600 shrink-0"><i class="fas fa-brain"></i></div>
@@ -156,31 +162,62 @@
             </div>
         </section>
 
+        <!-- القسم الثالث: أهمية التفكير الابتكاري وطبيعة الابتكار (ص 44 - 46) -->
+        <section class="reveal grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div class="bg-white p-8 rounded-2xl shadow-lg border-r-8 border-teal-500">
+                <h3 class="text-2xl font-bold mb-6 text-teal-700"><i class="fas fa-star mr-2 ml-2"></i> أهمية التفكير الابتكاري <span class="text-sm bg-teal-100 text-teal-800 px-3 py-1 rounded-full align-middle font-normal">ص 44-45</span></h3>
+                <ul class="list-disc list-inside space-y-3 text-gray-700 text-sm font-medium">
+                    <li>حاجة المجتمع إلى مفكرين وقادة جدد متطلعين دائما للمغامرة والتجديد.</li>
+                    <li>الوصول بكل فرد لتنمية مواهبه وتحقيق ذاته.</li>
+                    <li>استمتاع التلاميذ أثناء ممارساتهم للأنشطة الابتكارية.</li>
+                    <li>مساعدة كل التلاميذ الموهوبين وبطيئي التعلم.</li>
+                    <li>إمكانية التغلب على الفجوة الحادثة بين الميول والقدرات.</li>
+                    <li>التوظيف الكامل لقوى الأفراد المبدعين.</li>
+                    <li>توفير الصحة النفسية للأفراد المبدعين.</li>
+                    <li>زيادة التحصيل الدراسي.</li>
+                    <li>تحقيق النجاح المدرسي.</li>
+                    <li>الأهمية الاجتماعية للابتكار.</li>
+                </ul>
+            </div>
+            
+            <div class="bg-white p-8 rounded-2xl shadow-lg border-r-8 border-orange-500">
+                <h3 class="text-2xl font-bold mb-6 text-orange-700"><i class="fas fa-leaf mr-2 ml-2"></i> طبيعة الابتكار الأربعة <span class="text-sm bg-orange-100 text-orange-800 px-3 py-1 rounded-full align-middle font-normal">ص 46</span></h3>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="bg-orange-50 p-4 rounded-xl text-center font-bold text-orange-800 border border-orange-100">1. الحل المباشر</div>
+                    <div class="bg-orange-50 p-4 rounded-xl text-center font-bold text-orange-800 border border-orange-100">2. الحل التدريجي</div>
+                    <div class="bg-orange-50 p-4 rounded-xl text-center font-bold text-orange-800 border border-orange-100">3. الحل المنتظم الهادئ</div>
+                    <div class="bg-orange-50 p-4 rounded-xl text-center font-bold text-orange-800 border border-orange-100">4. الحل الفجائي</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- القسم الرابع: مكونات الابتكار (ص 47 - 49) -->
         <section class="reveal">
             <div class="bg-indigo-900 rounded-3xl p-10 text-white shadow-2xl">
-                <h2 class="text-3xl font-bold text-center mb-10">مكونات الابتكار الثلاثة</h2>
+                <h2 class="text-3xl font-bold text-center mb-10">مكونات الابتكار الثلاثة <span class="text-sm bg-indigo-200 text-indigo-900 px-3 py-1 rounded-full align-middle font-normal ml-2">ص 47-49</span></h2>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                     <div class="bg-indigo-800 p-8 rounded-xl border border-indigo-600 hover:bg-indigo-700 transition">
                         <i class="fas fa-water text-5xl text-blue-400 mb-4 block text-center"></i>
-                        <h3 class="text-2xl font-bold mb-3 text-center text-blue-300">الطلاقة (Fluency)</h3>
+                        <h3 class="text-2xl font-bold mb-3 text-center text-blue-300">الطلاقة (Fluency) <span class="text-xs bg-indigo-500 px-2 py-1 rounded-full text-white">ص 47</span></h3>
                         <p class="text-indigo-200 text-center text-sm leading-relaxed">القدرة على سرعة إنتاج أكبر عدد ممكن من الاستجابات المناسبة تجاه مشكلة. (تركز على <strong>معدل الإنتاج والكم</strong>، وتقاس بالعدد الكلي للإجابات).</p>
                     </div>
                     <div class="bg-indigo-800 p-8 rounded-xl border border-indigo-600 hover:bg-indigo-700 transition">
                         <i class="fas fa-random text-5xl text-purple-400 mb-4 block text-center"></i>
-                        <h3 class="text-2xl font-bold mb-3 text-center text-purple-300">المرونة (Flexibility)</h3>
+                        <h3 class="text-2xl font-bold mb-3 text-center text-purple-300">المرونة (Flexibility) <span class="text-xs bg-indigo-500 px-2 py-1 rounded-full text-white">ص 48</span></h3>
                         <p class="text-indigo-200 text-center text-sm leading-relaxed">قدرة الفرد على تغيير الوجهة الذهنية والتحرر من الأفكار النمطية. (تركز على <strong>نوعية الإنتاج والتنوع</strong>، وتقاس بعدد الفئات المختلفة للأفكار).</p>
                     </div>
                     <div class="bg-indigo-800 p-8 rounded-xl border border-indigo-600 hover:bg-indigo-700 transition">
                         <i class="fas fa-crown text-5xl text-yellow-400 mb-4 block text-center"></i>
-                        <h3 class="text-2xl font-bold mb-3 text-center text-yellow-300">الأصالة (Originality)</h3>
+                        <h3 class="text-2xl font-bold mb-3 text-center text-yellow-300">الأصالة (Originality) <span class="text-xs bg-indigo-500 px-2 py-1 rounded-full text-white">ص 48</span></h3>
                         <p class="text-indigo-200 text-center text-sm leading-relaxed">القدرة على سرعة إنتاج أفكار جديدة غير مألوفة ونادرة. (تركز على <strong>الندرة والجدة</strong>، وتقاس بالندرة بالمعنى الإحصائي للإجابات).</p>
                     </div>
                 </div>
             </div>
         </section>
 
+        <!-- القسم الخامس: نماذج التفكير الابتكاري (ص 50 - 53) -->
         <section class="reveal bg-gradient-to-b from-gray-50 to-white p-10 rounded-3xl shadow-inner border border-gray-200">
-            <h2 class="text-4xl font-black text-center mb-4 text-indigo-900">نماذج مراحل التفكير الابتكاري</h2>
+            <h2 class="text-4xl font-black text-center mb-4 text-indigo-900">نماذج مراحل التفكير الابتكاري <span class="text-lg bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full align-middle font-normal ml-2 text-shadow-none">ص 50-53</span></h2>
             <p class="text-center text-gray-500 font-medium mb-12">النظريات العلمية التي تفسر كيف يمر العقل بخطوات لإنتاج الابتكار</p>
             
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -189,7 +226,7 @@
                     <div class="flex items-center gap-3 mb-4 border-b border-gray-100 pb-4">
                         <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center text-xl font-bold">1</div>
                         <div>
-                            <h3 class="text-2xl font-bold text-blue-800">نموذج روسمان (Rossman)</h3>
+                            <h3 class="text-2xl font-bold text-blue-800">نموذج روسمان (Rossman) <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded-full">ص 50</span></h3>
                             <p class="text-sm text-gray-500 font-medium mt-1">يتكون من 7 مراحل | <span class="text-blue-600 font-bold">يركز على الفردية والتسلسل</span></p>
                         </div>
                     </div>
@@ -209,7 +246,7 @@
                     <div class="flex items-center gap-3 mb-4 border-b border-gray-100 pb-4">
                         <div class="w-12 h-12 bg-pink-100 text-pink-600 rounded-full flex items-center justify-center text-xl font-bold">2</div>
                         <div>
-                            <h3 class="text-2xl font-bold text-pink-800">نموذج دي بونو (De Bono)</h3>
+                            <h3 class="text-2xl font-bold text-pink-800">نموذج دي بونو (De Bono) <span class="text-xs bg-pink-100 text-pink-800 px-2 py-1 rounded-full">ص 50-51</span></h3>
                             <p class="text-sm text-gray-500 font-medium mt-1">يتكون من 5 مراحل | <span class="text-pink-600 font-bold">يركز على هيكلة التفكير (مدخلات ومخرجات)</span></p>
                         </div>
                     </div>
@@ -227,7 +264,7 @@
                     <div class="flex items-center gap-3 mb-4 border-b border-gray-100 pb-4">
                         <div class="w-12 h-12 bg-purple-100 text-purple-600 rounded-full flex items-center justify-center text-xl font-bold">3</div>
                         <div>
-                            <h3 class="text-2xl font-bold text-purple-800">نموذج والاس (Wallas)</h3>
+                            <h3 class="text-2xl font-bold text-purple-800">نموذج والاس (Wallas) <span class="text-xs bg-purple-100 text-purple-800 px-2 py-1 rounded-full">ص 51-52</span></h3>
                             <p class="text-sm text-gray-500 font-medium mt-1">يتكون من 4 مراحل | <span class="text-purple-600 font-bold">يركز على علم النفس واللاوعي</span></p>
                         </div>
                     </div>
@@ -244,7 +281,7 @@
                     <div class="flex items-center gap-3 mb-4 border-b border-gray-100 pb-4">
                         <div class="w-12 h-12 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center text-xl font-bold">4</div>
                         <div>
-                            <h3 class="text-2xl font-bold text-emerald-800">نموذج أبو جمعة</h3>
+                            <h3 class="text-2xl font-bold text-emerald-800">نموذج أبو جمعة <span class="text-xs bg-emerald-100 text-emerald-800 px-2 py-1 rounded-full">ص 52-53</span></h3>
                             <p class="text-sm text-gray-500 font-medium mt-1">يتكون من 6 مراحل | <span class="text-emerald-600 font-bold">يركز على التنفيذ العملي والتطبيق</span></p>
                         </div>
                     </div>
@@ -262,34 +299,10 @@
             </div>
         </section>
 
-        <section class="reveal grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div class="bg-white p-8 rounded-2xl shadow-lg border-r-8 border-teal-500">
-                <h3 class="text-2xl font-bold mb-6 text-teal-700"><i class="fas fa-star mr-2 ml-2"></i> أهمية التفكير الابتكاري</h3>
-                <ul class="list-disc list-inside space-y-3 text-gray-700 text-sm font-medium">
-                    <li>حاجة المجتمع إلى مفكرين وقادة متطلعين للمغامرة والتجديد.</li>
-                    <li>الوصول بكل فرد لتنمية مواهبه وتحقيق ذاته.</li>
-                    <li>استمتاع التلاميذ أثناء ممارساتهم للأنشطة الابتكارية.</li>
-                    <li>مساعدة كل التلاميذ الموهوبين وبطيئي التعلم.</li>
-                    <li>التوظيف الكامل لقوى الأفراد المبدعين وتوفير الصحة النفسية لهم.</li>
-                    <li>زيادة التحصيل الدراسي وتحقيق النجاح المدرسي.</li>
-                    <li>يعد قمة السلوكيات البشرية ومسؤولية لتطوير المجتمعات.</li>
-                </ul>
-            </div>
-            
-            <div class="bg-white p-8 rounded-2xl shadow-lg border-r-8 border-orange-500">
-                <h3 class="text-2xl font-bold mb-6 text-orange-700"><i class="fas fa-leaf mr-2 ml-2"></i> طبيعة الابتكار الأربعة</h3>
-                <div class="grid grid-cols-2 gap-4">
-                    <div class="bg-orange-50 p-4 rounded-xl text-center font-bold text-orange-800 border border-orange-100">1. الحل المباشر</div>
-                    <div class="bg-orange-50 p-4 rounded-xl text-center font-bold text-orange-800 border border-orange-100">2. الحل التدريجي</div>
-                    <div class="bg-orange-50 p-4 rounded-xl text-center font-bold text-orange-800 border border-orange-100">3. الحل المنتظم الهادئ</div>
-                    <div class="bg-orange-50 p-4 rounded-xl text-center font-bold text-orange-800 border border-orange-100">4. الحل الفجائي</div>
-                </div>
-            </div>
-        </section>
-
+        <!-- القسم السادس: طريقة باكسا والعصف الذهني (ص 66 - 67) -->
         <section class="reveal grid grid-cols-1 lg:grid-cols-2 gap-8">
             <div class="bg-white rounded-2xl shadow-xl overflow-hidden">
-                <div class="bg-blue-600 text-white p-4 font-bold text-xl"><i class="fas fa-list-ol ml-2"></i> طريقة باكسا (baksa) بالترتيب</div>
+                <div class="bg-blue-600 text-white p-4 font-bold text-xl"><i class="fas fa-list-ol ml-2"></i> طريقة باكسا (baksa) بالترتيب <span class="text-sm bg-blue-400 text-white px-2 py-1 rounded-full align-middle font-normal mr-2">ص 66</span></div>
                 <div class="p-6">
                     <ol class="list-decimal list-inside space-y-2 text-gray-700 font-medium text-sm md:text-base">
                         <li class="pb-1 border-b border-gray-100">تخير المشكلة وتحديدها.</li>
@@ -306,7 +319,7 @@
             </div>
 
             <div class="bg-white rounded-2xl shadow-xl overflow-hidden flex flex-col">
-                <div class="bg-yellow-500 text-white p-4 font-bold text-xl"><i class="fas fa-bolt ml-2"></i> العصف الذهني</div>
+                <div class="bg-yellow-500 text-white p-4 font-bold text-xl"><i class="fas fa-bolt ml-2"></i> العصف الذهني <span class="text-sm bg-yellow-400 text-white px-2 py-1 rounded-full align-middle font-normal mr-2">ص 66-67</span></div>
                 <div class="p-6 flex-1 flex flex-col justify-center">
                     <p class="text-gray-600 mb-4 font-medium leading-relaxed">أسلوب جماعي يقوم على توليد العديد من الأفكار مع <strong class="text-yellow-600">تأجيل إصدار الأحكام عليها بمجرد ظهورها</strong> (الكم يولد الكيف). مراحله:</p>
                     <ul class="space-y-3 font-medium">
@@ -320,8 +333,9 @@
             </div>
         </section>
 
+        <!-- القسم السابع: وظائف النصفين الكرويين (ص 68 - 74) -->
         <section class="reveal">
-            <h2 class="text-4xl font-bold text-center mb-12 text-gradient">وظائف وتخصص النصفين الكرويين للدماغ</h2>
+            <h2 class="text-4xl font-bold text-center mb-12 text-gradient">وظائف وتخصص النصفين الكرويين للدماغ <span class="text-lg bg-pink-100 text-pink-800 px-3 py-1 rounded-full align-middle font-normal ml-2 text-shadow-none">ص 68-74</span></h2>
             <div class="flex flex-col md:flex-row gap-8">
                 <div class="flex-1 rounded-3xl p-8 shadow-lg brain-right relative overflow-hidden hover-card">
                     <i class="fas fa-palette absolute -top-4 -left-4 text-8xl text-pink-300 opacity-30 transform -rotate-12"></i>
@@ -351,32 +365,85 @@
             </div>
         </section>
 
-        <section class="reveal">
-            <h2 class="text-3xl font-bold text-center mb-10 text-red-600"><i class="fas fa-ban ml-2"></i> معوقات التفكير الابتكاري</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div class="bg-red-50 p-6 rounded-xl border border-red-200 hover-card">
-                    <h3 class="text-xl font-bold text-red-700 mb-4 text-center"><i class="fas fa-home ml-2"></i> معوقات الأسرة</h3>
-                    <p class="text-sm text-gray-700 font-medium leading-relaxed">التسلط، الحماية الزائدة، التفرقة، الاهتمام الموجه نحو استثارة الذكاء والنجاح الأكاديمي المجرد فقط، التمسك الأعمى بالتقاليد، الخوف من العقاب، وضيق الوقت للفتيات.</p>
+        <!-- القسم الثامن: معوقات التفكير الابتكاري (ص 74 - 76) بالتصميم الجديد -->
+        <section class="reveal bg-gradient-to-br from-red-50 via-white to-orange-50 p-10 md:p-14 rounded-[3rem] shadow-2xl border border-red-100 relative overflow-hidden">
+            <!-- Decorative background elements -->
+            <div class="absolute top-0 left-0 w-64 h-64 bg-red-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob"></div>
+            <div class="absolute top-0 right-0 w-64 h-64 bg-orange-200 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-2000"></div>
+
+            <h2 class="text-4xl font-black text-center mb-12 text-red-700 relative z-10">
+                <i class="fas fa-exclamation-triangle ml-3"></i> تفصيل معوقات التفكير الابتكاري
+                <span class="text-lg bg-red-200 text-red-900 px-4 py-1 rounded-full align-middle font-normal ml-2 text-shadow-none">ص 74-76</span>
+            </h2>
+
+            <div class="space-y-8 relative z-10">
+                <!-- معوقات الأسرة -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg border-r-8 border-rose-500 hover:shadow-xl transition-shadow flex flex-col md:flex-row gap-8 items-center">
+                    <div class="md:w-1/4 text-center border-b md:border-b-0 md:border-l border-gray-200 pb-4 md:pb-0 md:pl-6">
+                        <div class="w-20 h-20 mx-auto bg-rose-100 text-rose-600 rounded-full flex items-center justify-center text-4xl mb-4 shadow-inner">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-rose-800">معوقات الأسرة</h3>
+                    </div>
+                    <div class="md:w-3/4">
+                        <ul class="space-y-3 text-gray-700 font-medium">
+                            <li class="flex items-start"><i class="fas fa-times text-rose-500 ml-3 mt-1"></i> <span><strong>الأساليب التربوية الخاطئة:</strong> ممارسة التسلط، الحماية الزائدة، الإهمال، التفرقة، وعدم احترام رأي المبتكر أو اللجوء للضرب والشتم.</span></li>
+                            <li class="flex items-start"><i class="fas fa-times text-rose-500 ml-3 mt-1"></i> <span><strong>الهوس بالدرجات:</strong> توجيه الاهتمام حصرياً نحو استثارة الذكاء والنجاح الأكاديمي المجرد وإهمال المواهب.</span></li>
+                            <li class="flex items-start"><i class="fas fa-times text-rose-500 ml-3 mt-1"></i> <span><strong>التمسك الأعمى بالتقاليد:</strong> مقاومة التجديد وزرع الخوف من الانتقاد وتأنيب الأسرة.</span></li>
+                            <li class="flex items-start"><i class="fas fa-times text-rose-500 ml-3 mt-1"></i> <span><strong>تأثير المستوى والترتيب:</strong> علاقة سالبة مع الترتيب، وموجبة مع المستوى الاقتصادي للأسرة.</span></li>
+                            <li class="flex items-start"><i class="fas fa-times text-rose-500 ml-3 mt-1"></i> <span><strong>ضيق الوقت للفتيات:</strong> تحديداً بسبب كثرة المساهمة في الأعمال المنزلية الكثيرة.</span></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="bg-red-50 p-6 rounded-xl border border-red-200 hover-card">
-                    <h3 class="text-xl font-bold text-red-700 mb-4 text-center"><i class="fas fa-school ml-2"></i> معوقات المدرسة</h3>
-                    <p class="text-sm text-gray-700 font-medium leading-relaxed">التربية الموجهة نحو النجاح، الامتحانات التي تقيس بنطاق محدد، العقاب على التساؤل، كبت الأفكار، ضغط الوقت، التلقين، النقد الهدام، وضعف كفاءة المعلمين والمناهج.</p>
+
+                <!-- معوقات المدرسة -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg border-r-8 border-orange-500 hover:shadow-xl transition-shadow flex flex-col md:flex-row gap-8 items-center">
+                    <div class="md:w-1/4 text-center border-b md:border-b-0 md:border-l border-gray-200 pb-4 md:pb-0 md:pl-6">
+                        <div class="w-20 h-20 mx-auto bg-orange-100 text-orange-600 rounded-full flex items-center justify-center text-4xl mb-4 shadow-inner">
+                            <i class="fas fa-school"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-orange-800">معوقات المدرسة</h3>
+                    </div>
+                    <div class="md:w-3/4">
+                        <ul class="space-y-3 text-gray-700 font-medium">
+                            <li class="flex items-start"><i class="fas fa-times text-orange-500 ml-3 mt-1"></i> <span><strong>التعليم الموجه للامتحانات:</strong> الاعتماد على التلقين والحفظ، حيث تقيس الامتحانات التحصيل في نطاق محدد.</span></li>
+                            <li class="flex items-start"><i class="fas fa-times text-orange-500 ml-3 mt-1"></i> <span><strong>قمع التساؤل:</strong> العقاب على التساؤل والاستكشاف، توجيه النقد الهدام وكبت الأفكار الإبداعية.</span></li>
+                            <li class="flex items-start"><i class="fas fa-times text-orange-500 ml-3 mt-1"></i> <span><strong>بيئة غير داعمة:</strong> سوء المعاملة وعدم احترام المتعلم، ضعف كفاءة المعلمين، وانعدام التسهيلات لاحتضان المواهب.</span></li>
+                            <li class="flex items-start"><i class="fas fa-times text-orange-500 ml-3 mt-1"></i> <span><strong>ضغط الوقت والمناهج:</strong> كثرة الواجبات وضغط الجداول، وضعف المناهج في تنمية طاقات المخ الإبداعية.</span></li>
+                            <li class="flex items-start"><i class="fas fa-times text-orange-500 ml-3 mt-1"></i> <span><strong>الفصل بين العمل واللعب:</strong> القسمة الثنائية بين الجد واللعب والتأكيد المفرط على مهارات لغوية محددة.</span></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="bg-red-50 p-6 rounded-xl border border-red-200 hover-card">
-                    <h3 class="text-xl font-bold text-red-700 mb-4 text-center"><i class="fas fa-city ml-2"></i> معوقات المجتمع</h3>
-                    <p class="text-sm text-gray-700 font-medium leading-relaxed">معوقات ثقافية وانفعالية وإدراكية، الاتجاه التسلطي السائد، التأخر الحضاري والتكنولوجي، المشكلات السياسية، وعدم تقدير العلماء والمبتكرين أو دعمهم مادياً.</p>
+
+                <!-- معوقات المجتمع -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg border-r-8 border-red-500 hover:shadow-xl transition-shadow flex flex-col md:flex-row gap-8 items-center">
+                    <div class="md:w-1/4 text-center border-b md:border-b-0 md:border-l border-gray-200 pb-4 md:pb-0 md:pl-6">
+                        <div class="w-20 h-20 mx-auto bg-red-100 text-red-600 rounded-full flex items-center justify-center text-4xl mb-4 shadow-inner">
+                            <i class="fas fa-globe-americas"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold text-red-800">معوقات المجتمع</h3>
+                    </div>
+                    <div class="md:w-3/4">
+                        <ul class="space-y-3 text-gray-700 font-medium">
+                            <li class="flex items-start"><i class="fas fa-times text-red-500 ml-3 mt-1"></i> <span><strong>غياب الوعي والدعم:</strong> عدم وعي المجتمع بأهمية الابتكار وعدم تقدير المبتكرين والعلماء، والنقص الحاد في الدعم المادي والنوادي وبرامج الرعاية.</span></li>
+                            <li class="flex items-start"><i class="fas fa-times text-red-500 ml-3 mt-1"></i> <span><strong>الاتجاه التسلطي السائد:</strong> سيادة النمط التسلطي ووجود معوقات ثقافية وانفعالية وإدراكية تحد من حرية التفكير والانطلاق.</span></li>
+                            <li class="flex items-start"><i class="fas fa-times text-red-500 ml-3 mt-1"></i> <span><strong>التأخر الحضاري والسياسي:</strong> انخفاض المستوى التعليمي والتكنولوجي، وتأثير المشكلات السياسية التي تعيق مسيرة التطور.</span></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
 
+        <!-- قسم الاختبار (يشمل كامل الفصل) -->
         <section id="quiz-section" class="reveal bg-white p-8 md:p-12 rounded-3xl shadow-2xl border-t-8 border-indigo-600 mt-20">
             <div class="text-center mb-12">
-                <h2 class="text-4xl font-extrabold text-indigo-700 mb-4">اختبار تقييم الذات</h2>
+                <h2 class="text-4xl font-extrabold text-indigo-700 mb-4">اختبار تقييم الذات للفصل الثاني كاملاً</h2>
                 <p class="text-gray-500 text-lg">30 سؤال موضوعي (ضع دائرة) لاختبار فهمك الدقيق للفصل الثاني</p>
             </div>
 
             <div id="quiz-container" class="space-y-8">
-                </div>
+                <!-- سيتم إدراج الأسئلة هنا بواسطة الجافاسكربت -->
+            </div>
 
             <div class="mt-12 text-center">
                 <button id="submit-btn" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-4 px-12 rounded-full text-xl shadow-lg transform transition hover:scale-105">
